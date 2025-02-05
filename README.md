@@ -1,48 +1,4 @@
-# Nursing Workforce Management Dashboard
-
-A modern, responsive dashboard for nurse managers to efficiently manage their workforce and monitor patient care.
-
-## Features
-
-- **Unit Overview**: Quick stats showing patient count, staff on duty, and key metrics
-- **Updates Section**: 
-  - Patient admission/discharge updates
-  - Staff notifications
-  - Night shift reports
-- **Priority Tasks**: 
-  - Checklist of daily priorities
-  - Priority levels and action items
-  - Quick access to related details
-- **Daily Schedule**: 
-  - Timeline view of daily events
-  - Visual indicators for current events
-  - Meeting and huddle tracking
-
-## Design Choices
-
-1. **Accessibility**:
-   - High contrast colors for better readability
-   - Clear hierarchy with semantic HTML
-   - Keyboard navigation support
-   - Screen reader friendly content structure
-
-2. **Responsive Design**:
-   - Mobile-first approach
-   - Flexible grid layout
-   - Collapsible sections for smaller screens
-   - Optimized spacing for different devices
-
-3. **User Experience**:
-   - Clean, uncluttered interface
-   - Visual hierarchy for important information
-   - Quick action buttons for common tasks
-   - Status indicators and badges for priority items
-
-4. **Performance**:
-   - Component-based architecture
-   - Efficient state management
-   - Optimized rendering with React
-   - Minimal dependencies
+# Nursing Dashboard Takehome
 
 ## Tech Stack
 
@@ -64,6 +20,11 @@ A modern, responsive dashboard for nurse managers to efficiently manage their wo
    ```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## Contribution Guidelines
+
+- Use a separate branch for your changes. Do not commit directly to `main`.
+- Open a Pull Request (PR) to submit your work.
+
 ## Project Structure
 
 ```
@@ -78,19 +39,35 @@ A modern, responsive dashboard for nurse managers to efficiently manage their wo
     └── assets/           # Static assets
 ```
 
-## Data Structure
+## Take-Home Assignment: Add a Modal Summary Component
 
-The dashboard uses TypeScript interfaces for type safety:
+### Objective
 
-- `Patient`: Patient information and status
-- `StaffUpdate`: Staff-related notifications
-- `Priority`: Task priorities and completion status
-- `Schedule`: Daily schedule events
+Add a component to the dashboard that displays a "Last Shift Summary" modal when the user clicks the "Full Night Shift Details" button, located at the bottom of the "Catch Up" section. The component should fetch mock data from an API endpoint and present it in a user-friendly format similar to the screenshot below.
 
-## Future Enhancements
+<img src="./modal.png" width="75%" alt="Modal screenshot" />
 
-1. Real-time updates with WebSocket integration
-2. Advanced filtering and search capabilities
-3. Customizable dashboard layouts
-4. Integration with hospital EMR systems
-5. Advanced analytics and reporting features
+### Requirements
+
+1. **Design**: The component should match the existing design language of the dashboard (Tailwind CSS + shadcn/ui).
+
+2. **API Integration**:
+
+   - Create a mock API endpoint to provide data for the "Last Shift Summary" component.
+
+3. **Component Behavior**:
+
+   - Fetch data from the mock API endpoint and render it.
+   - Highlight key metrics (e.g., automation rate, time saved).
+   - Display suggested next steps as actionable links.
+
+4. **Implementation Details**:
+   - The modal doesn't have to look _exactly_ like the screenshot. Colors, styles and content should match, but the shape is not of concern.
+   - All actionable links should have blank targets.
+
+### Evaluation Criteria
+
+1. Code quality and adherence to the project's conventions
+2. Clear and responsive design implementation
+3. Proper use of TypeScript and Tailwind CSS
+4. Accurate data retrieval and presentation from the mock API
