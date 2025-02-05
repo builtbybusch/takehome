@@ -62,7 +62,7 @@ Add a component to the dashboard that displays a "Last Shift Summary" modal when
    - Display suggested next steps as actionable links.
 
 4. **Implementation Details**:
-   - The modal doesn't have to look _exactly_ like the screenshot. Colors, styles and content should match, but the shape is not of concern.
+
    - All actionable links should have blank targets.
 
 ### Evaluation Criteria
